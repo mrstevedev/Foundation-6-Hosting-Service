@@ -1,0 +1,186 @@
+.bg-dark {
+  background: #000;
+  a {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.top-bar {
+  li {
+    a {
+      color: $black;
+      font-weight: bold;
+    }
+  }
+}
+
+.main-bar.top-bar:first-child {
+  background: #000;
+  ul {
+    background: transparent;
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Hero
+$hero-height: 89vh;
+
+.hero-section {
+  background: url("../etc/server-room.jpg") no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+    color: $white;
+    h1,
+    h5 {
+      font-family: "Futura";
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    font-size: 14px;
+  }
+}
+
+.input-group {
+  margin-top: 1rem;
+  input[type="submit"] {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 4rem;
+  }
+  .input-group-label {
+    font-weight: bold;
+  }
+}
+.tabs {
+  border: none;
+  background: transparent;
+}
+.tabs-content {
+  border: none;
+  background: transparent;
+  h4 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+}
+
+.tabs-title > a:focus,
+.tabs-title > a[aria-selected="true"] {
+  background: transparent;
+  color: #000;
+  font-weight: bold;
+}
+
+.tabs-title > a {
+    color: #ccc;
+    font-weight: bold;
+    transition: .32s ease-in-out;
+} 
+
+.top-bar:first-child ul li a:hover:after {
+  content: "";
+  background: #fff;
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -19px;
+
+}
+.client-menu {
+    li {
+        position: relative;
+        margin: 0 1rem;
+        transition: .32s;
+
+        a {
+            padding:0
+        }
+    }
+}
+
+.hosting.top-bar {
+    background: transparent;
+    padding: 3rem 0;
+    h3 {
+        text-align: center;
+        font-weight: bold;
+    }
+    h3:after {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 4px;
+        background: #000;
+        margin: 14px auto;
+    }
+}
+
+.card {
+    border: transparent;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px #e6e6e6;
+    padding: 3rem;
+    .menu li { 
+        font-weight: bold;
+    }
+    h4:after {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #000;
+        margin: 12px 0; 
+    }
+}
+
+.card-divider {
+    background: transparent;
+}
+
+.one{
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(-60deg, #fff 50%, #000 50%);
+    min-height: 500px;
+    padding: 0 0 6rem 0;
+    .button.expanded {
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    .menu.vertical {
+        padding: 1rem 0;
+    }
+  }
+
+.fas {
+    padding: 0px 6px 0 0;
+}
+
+footer {
+    background: #101010;
+    position: fixed;
+    padding: .7rem 0;
+    width: 100%;
+    bottom: 0;
+    p {
+        font-weight: bold;
+        margin: 0;
+        color: #fff;
+    }
+}
