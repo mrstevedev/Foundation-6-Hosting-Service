@@ -75,7 +75,7 @@ $hero-height: 89vh;
   background: transparent;
   h4 {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1rem;
     line-height: 1;
   }
 }
@@ -165,11 +165,16 @@ $hero-height: 89vh;
     }
     .menu.vertical {
         padding: 1rem 0;
+        color: #808080;
     }
   }
 
 .fas {
     padding: 0px 6px 0 0;
+}
+
+.reveal {
+  border: none;
 }
 
 footer {
